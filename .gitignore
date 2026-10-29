@@ -1,0 +1,13 @@
+# This repository ships only `addons/suffix_importer/`.
+# The rest of this directory is the local Godot test project and stays out of git.
+/*
+!/.gitattributes
+!/.gitignore
+!/README.md
+!/addons/
+/addons/*
+!/addons/suffix_importer/
+
+# Rule sets are per-project user data. Keeping the test project's rules out of the
+# repo also means an addon update can't clobber someone's own suffix_rules.tres.
+/addons/suffix_importer/suffix_rules.tres
